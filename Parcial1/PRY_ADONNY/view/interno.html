@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        INTERNO
+    </title>
+
+    <style>
+        .text_area {
+            outline: 2px solid orangered;
+        }
+
+        .input_propiedad {
+            background-color: rebeccapurple;
+        }
+
+        .select_propiedad {
+
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+
+            background-image: url("https://svgsilh.com/svg_v2/3263081.svg");
+            background-repeat: no-repeat;
+            background-position: right 10px center;
+            background-size: 14px;
+            padding-right: 30px;
+        }
+
+        .checkbox_propiedad {
+            accent-color: red;
+        }
+
+        .radio_propiedad {
+            cursor: help;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <h1>
+        INTERNO 
+    </h1>
+
+    <!-- INPUT -->
+    <input type="text" 
+        name="input_text" 
+        value="Buenos días"
+        class="input_propiedad"
+    >
+
+    <br>
+
+    <!-- TEXT AREA -->
+     <textarea class="text_area"
+        name="text_area"  
+        cols="10" 
+        rows="5">
+        Buenos días
+    </textarea>
+
+    <br>
+
+    <!-- SELECT -->
+    <select name="select" id="select" class="select_propiedad">
+        <option value="1">uno</option>
+        <option value="2">dos</option>
+        <option value="3">tres</option>
+    </select>
+    <br>
+
+    <!-- CHECKBOX -->
+     <label for="checkbox">CHECKBOX</label>
+    <input type="checkbox" 
+        name="checkbox" 
+        checked
+        class="checkbox_propiedad"
+    >
+    <br>
+
+    <!-- RADIO -->
+    <label for=""> SELECIONE SU SEXO</label>
+    <br>
+
+    <label for="hombre">HOMBRE</label>
+    <input 
+        type="radio" 
+        id="hombre" 
+        name="sexo" 
+        value="HOMBRE"
+        class="radio_propiedad"
+    >
+
+    <label for="mujer">MUJER</label>
+    <input 
+        type="radio" 
+        id="mujer" 
+        name="sexo" 
+        value="MUJER"
+    >
+    <hr>
+    <h1>
+        EN LINEA
+    </h1>
+
+    <input type="text" 
+        name="input_text" 
+        value="Buenos días"
+        style="border-left: 1rem solid;"
+        
+    >
+
+    <br><br>
+
+    <!-- TEXT AREA -->
+    <textarea
+        name="text_area"  
+        cols="10" 
+        rows="5" style="writing-mode: vertical-lr;">Buenos días</textarea>
+
+    <br>
+
+    <!-- SELECT -->
+    <select name="select" id="select" style="direction: rtl;">
+        <option value="1">uno</option>
+        <option value="2">dos</option>
+        <option value="3">tres</option>
+    </select>
+    <br>
+
+    <!-- CHECKBOX -->
+    <label for="checkbox">CHECKBOX</label>
+    <input type="checkbox" 
+        name="checkbox"
+        style="
+            accent-color: orange;      /* cambia el color del check */
+            /* box-shadow: 0 0 5px gray;  /* agrega sombra */
+            transform: scale(1.4);     /* agranda el checkbox */
+            opacity: 0.8;              /* transparencia */"  
+    >
+    <br>
+
+    <!-- RADIO -->
+    <label for="">CONSULTA</label>
+    <br>
+
+    <label for="si">SI</label>
+    <input 
+        type="radio" 
+        id="si" 
+        name="consulta" 
+        value="SI"
+        style="box-shadow: 0 0 5px green;"
+    >
+
+    <label for="no">NO</label>
+    <input 
+        type="radio" 
+        id="no" 
+        name="consulta"
+        value="NO"
+        style="box-shadow: 0 0 5px red;"
+    >
+
+
+
+    
+
+</body>
+
+</html>
